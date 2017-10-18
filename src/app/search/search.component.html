@@ -1,0 +1,21 @@
+<h3>{{name}}</h3>
+
+<form>
+  <div style="text-align:center">
+      <input type="text" name="title" [(ngModel)]="filter.title" placeholder="Título">
+      <input type="text" name="author" [(ngModel)]="filter.author" placeholder="Autor">
+      <input type="text" name="ISBN" [(ngModel)]="filter.metadata" placeholder="ISBN">
+      <input type="text" name="genre" [(ngModel)]="filter.metadata" placeholder="Género">
+  </div>
+
+  <ul style="text-align:center">
+    <li *ngFor="let book of books | bookfilter:filter">
+      Título: {{book.title}}, <br>
+      Autor: {{book.author}},<br>
+      ISBN: {{book.metadata | slice:1:16 }}, <br>
+      Género: {{book.metadata | slice:18:30}} <br>
+    </li>
+  </ul>
+
+</form>
+

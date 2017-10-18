@@ -1,0 +1,56 @@
+input {
+  width: 200px;
+  height: 30px;
+  font-size: .8em;
+  text-align: center;
+  border-radius: 0.35rem;
+  border: 3px inset rgba(46,61,73,0.35);
+  margin: 5px;
+  transition: 0.2s ease;
+}
+input:focus {
+  outline: none; 
+  box-shadow: 0px 20px 7px -15px rgba(0,0,0,.15);
+  transition: all 0.18s ease;
+  color: rgba(46,61,73,0.75);
+}
+input::placeholder{
+  color: rgba(163,163,163,.9);
+  font-size: 1em;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+li {
+  width: 50vw;
+  margin:0.2em 20%;
+  padding:0.5em 0.8em;
+  list-style:none;
+  font-weight: 700;
+  background-color:rgba(243,243,243,.9);
+  border-left:4.5px double rgba(2,179,228,0.75);
+  border-right:4.5px double rgba(2,179,228,0.75);
+  color:#333;
+  position:relative;
+}
+.recentUsers li {
+  position: relative;
+  width: 30vw;
+  margin:0.1em auto 0.1em auto;
+  padding:0.2em ;
+  list-style:none;
+  font-weight: 550;
+  background-color:rgba(253,253,253,.7);
+  border: none;
+  color:#333;
+  position:relative;
+  font-size: .9em;
+}
+.recentUsers {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.recentUsers li:hover {
+  border-right: 2px solid rgba(183,183,183,.7);
+  cursor: pointer;
+}

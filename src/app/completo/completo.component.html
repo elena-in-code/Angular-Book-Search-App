@@ -1,0 +1,25 @@
+<div style="text-align:center">
+  <ul class="books">
+    <li *ngFor="let book of books" class="bookList">
+        Título: {{book.title}} <br> Autor: {{book.author}}<br>
+        Usuarios que han visitado recientemente este recurso: <br> 
+        <ul style="text-align:center" class="recentUsers">
+            <li *ngFor="let user of book?.users" 
+                (mouseenter)="showReadBooksForUser(user.id)" 
+                (mouseleave)="resetReadBooks()"
+                class="individualUsers">{{user.name}}</li> 
+        </ul>
+    </li>
+  </ul>
+
+  
+  <div *ngIf="readBooks" id="readBooksOverlay" class="conatiner-user-info">
+  	<div class="permanent-info">
+		<h3>Este usuario también visitó:</h3>
+	</div>
+    <ul>
+      <li *ngFor="let book of readBooks" class="user-book-list">{{book.title}} de {{book.author}}</li>
+    </ul>
+  </div>
+
+</div> 
