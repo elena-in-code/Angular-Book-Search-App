@@ -41,3 +41,26 @@ hr {
   width: 75vw;
    border-color: rgba(243,243,243,.4);
 }
+
+/* +++++++++++++++++ media queries +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 380px) {
+  div.banner{
+    height: 40vh;
+  }
+  nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+  }
+  a {
+    width: 68vw;
+    position: relative;
+    margin: 5px auto;
+
+  }
+  .banner {
+  margin-bottom: 15px;
+}
+}
