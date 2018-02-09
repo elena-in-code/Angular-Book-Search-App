@@ -1,5 +1,5 @@
 <h1><strong>Angular 4 "National Library"</strong></h1>
-<p>Book Search Aplication</p>
+<p>Book Search Application</p>
 <img src="https://user-images.githubusercontent.com/30567608/31730008-e7227666-b430-11e7-99f8-2344d1e50de7.gif">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
